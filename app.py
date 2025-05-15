@@ -52,7 +52,7 @@ if uploaded_file and st.button("🚀 Run Inference"):
                 st.download_button(
                     label="📦 Download Results ZIP",
                     data=BytesIO(response.content),
-                    file_name="vrheart_results.zip",
+                    file_name=f"{uploaded_file.name.split('.')[0]}_results.zip",
                     mime="application/zip"
                 )
             else:
