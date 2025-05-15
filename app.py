@@ -42,7 +42,7 @@ if uploaded_file and st.button("🚀 Run Inference"):
     with st.spinner("⏳ Running inference on GPU... this may take a minute..."):
         try:
             response = requests.post(
-                "https://spellsharp--vr-heart-backend-fastapi-app.modal.run/process/",
+                "https://giladgressel--vr-heart-backend-fastapi-app.modal.run/process/",
                 files={"file": uploaded_file},
                 timeout=900  # 15 minutes max
             )
